@@ -32,3 +32,19 @@ heap.c:45:30: error: left-hand operand of comma expression has no effect [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 1f2af54
+Fri 12 May 2023 03:20:33 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:45:41: error: ‘p’ undeclared (first use in this function); did you mean ‘pq’?
+   45 |   pq->heapArray[currentIndex],priority =p;
+      |                                         ^
+      |                                         pq
+heap.c:45:41: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:45:30: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   45 |   pq->heapArray[currentIndex],priority =p;
+      |                              ^
+cc1: all warnings being treated as errors
+Compilation failed
+f7d4e96

@@ -35,7 +35,7 @@ void heap_push(Heap* pq, void* data, int priority){
   int currentIndex = pq->size;
   int parentIndex = (currentIndex -1)/2;
 
-  while (currentIndex >0&& pq->heapArray[parentIndex].priority< p){
+  while (currentIndex >0&& pq->heapArray[parentIndex].priority < priority){
     pq->heapArray[currentIndex] = pq->heapArray[parentIndex];
     currentIndex = parentIndex;
     parentIndex = (currentIndex - 1)/ 2;
