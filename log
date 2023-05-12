@@ -16,3 +16,19 @@ Fri 12 May 2023 03:06:14 AM UTC:
  tests:  2|2
 total_score: 20/70
 6dda77d
+Fri 12 May 2023 03:19:46 AM UTC: 
+ heap.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:38:65: error: ‘p’ undeclared (first use in this function); did you mean ‘pq’?
+   38 |   while (currentIndex >0&& pq->heapArray[parentIndex].priority< p){
+      |                                                                 ^
+      |                                                                 pq
+heap.c:38:65: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:45:30: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   45 |   pq->heapArray[currentIndex],priority =p;
+      |                              ^
+cc1: all warnings being treated as errors
+Compilation failed
+1f2af54
