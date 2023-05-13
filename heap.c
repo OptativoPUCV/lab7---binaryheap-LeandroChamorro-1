@@ -80,7 +80,7 @@ void heap_pop(Heap* pq){
   }
 }
 
-g
+
 Heap* createHeap(){
   Heap* heap = (Heap*)malloc(sizeof(Heap));
   heap->heapArray = (heapElem*)malloc(3 * sizeof(heapElem));
