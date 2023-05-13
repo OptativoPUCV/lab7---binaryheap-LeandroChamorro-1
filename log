@@ -95,3 +95,15 @@ Fri 12 May 2023 07:13:30 PM UTC:
  tests:  8|0
 total_score: 70/70
 a96350c
+Sat 13 May 2023 11:32:24 PM UTC: 
+ heap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+heap.c:83:1: error: unknown type name ‘g’
+   83 | g
+      | ^
+heap.c:84:5: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘*’ token
+   84 | Heap* createHeap(){
+      |     ^
+Compilation failed
+a94e75c
